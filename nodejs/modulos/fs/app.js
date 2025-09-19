@@ -1,6 +1,7 @@
 // Importa o modulo fs
-const fs = require('fs');
+// const fs = require('fs');
 
+import fs from 'fs';
 // Lê o conteúdo de um arquivo de forma assíncrona
 fs.readFile('example.txt', 'utf8', (err, data) => {
     // Trata erros e exibe o conteúdo do arquivo

@@ -1,5 +1,8 @@
 // Importa o modulo http
-const http = require('http');
+// const http = require('http');
+
+import http from 'http'
+
 // Cria o server
 http.createServer((req, res) => {
   // Define o cabeçalho e o corpo da resposta
@@ -8,3 +11,4 @@ http.createServer((req, res) => {
   res.end('Hello World!');
   // Escuta na porta 8080
 }).listen(8080);
+console.log('Servidor rodando em http://localhost:8080/');
