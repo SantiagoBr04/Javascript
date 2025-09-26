@@ -8,4 +8,4 @@ console.log("Subtração: " + subtrair(5, 3));
 console.log("Multiplicação: " + multiplicar(5, 3));
 console.log("Divisão: " + dividir(5, 1));
 
-console.log("Sua idade é: " + calculadora_idade.idade(2008));
+console.log(calculadora_idade.idade("joão", 1976, 2050));
