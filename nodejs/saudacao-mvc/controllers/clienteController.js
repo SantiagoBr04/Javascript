@@ -11,8 +11,8 @@ module.exports = {
     },
 
     confirmacao: (req, res) => {
-        const { nome, idade, favorita } = req.body;
-        const mensagem = loginModel.gerarMensagemPersonalizada(nome, idade, favorita);
+        const { email, login, nome } = req.body;
+        const mensagem = loginModel.gerarMensagemPersonalizada(email, login, nome);
         res.send(`<h1>${mensagem}</h1>`);
     }
 };

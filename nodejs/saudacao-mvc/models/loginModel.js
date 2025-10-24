@@ -1,15 +1,14 @@
 module.exports = {
-  gerarMensagemPersonalizada: (email, login, batata) => {
+  gerarMensagemPersonalizada: (email, login, nome) => {
     let email1 = "Santiago@email.com"
     let senha1 = "12345"
 
-    if email = email1 && login = senha1 {
-        faixaEtaria = "usuário autenticado"
+    if (email == email1 & login == senha1) {
+        verificacao = "usuário está autenticado"
     } else {
-        faixaEtaria = "usuário não autenticado"
+        verificacao = "usuário não está autenticado"
     }
 
-    return `Olá, ${nome}! Você tem ${idade}, Você é um(a) ${faixaEtaria}. 
-    Sua coisa favorita é ${favorita}, bem-vindo ao sistema de login!`;
+    return `Olá, ${nome}, seu ${verificacao}. `;
   }
 };
